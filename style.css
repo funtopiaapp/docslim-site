@@ -1,0 +1,15 @@
+:root { --red:#E5322D; --ink:#1A1A1A; --muted:#6B7280; --soft:#F5F5F5; --bg:#FFFFFF; }
+@media (prefers-color-scheme: dark) { :root { --red:#FF5148; --ink:#F2F2F2; --muted:#A1A1AA; --soft:#1C1C1E; --bg:#000000; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+header { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+header .mark { width: 40px; height: 40px; border-radius: 10px; background: var(--red); color: #fff; display: grid; place-items: center; font-weight: 800; font-size: 13px; }
+h1 { font-size: 28px; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 20px; margin: 32px 0 8px; }
+p, li { color: var(--ink); }
+.muted { color: var(--muted); font-size: 15px; }
+a { color: var(--red); }
+.card { background: var(--soft); border-radius: 14px; padding: 16px 18px; margin: 16px 0; }
+nav a { margin-right: 16px; }
+footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
